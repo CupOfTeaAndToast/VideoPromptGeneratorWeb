@@ -13,7 +13,7 @@ A professional cinematic prompt architect designed for Image-to-Video AI engines
 2. Upload the files in this folder (`index.html`, `style.css`, `script.js`).
 3. Go to **Settings** > **Pages**.
 4. Select the **main** branch as the source and click **Save**.
-5. Your tool will be live at `https://[your-username].github.io/[repo-name]/`.
+5. Your tool will be live at https://cupofteaandtoast.github.io/VideoPromptGeneratorWeb/
 
 ## License
 MIT
