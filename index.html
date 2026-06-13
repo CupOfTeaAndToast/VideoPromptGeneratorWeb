@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pro AI Video Director | Cinematic Sequence Generator</title>
+    <title>PRO AI VIDEO DIRECTOR | WEB</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
@@ -12,31 +12,32 @@
         <div class="container">
             <header>
                 <h1>PRO AI VIDEO DIRECTOR</h1>
-                <p class="subtitle">Cinematic Sequence Architect for Seedance & Kling</p>
+                <p class="subtitle">Ultimate Cinematic Suite for Seedance & Kling</p>
             </header>
-
             <main>
-                <div class="control-panel">
+                <div class="left-panel">
                     <div class="card">
                         <h3>Optics & Style</h3>
                         <div class="grid">
                             <section>
-                                <label>GENRE / STYLE ARCHETYPE</label>
+                                <label>STYLE ARCHETYPE</label>
                                 <select id="genrePreset">
                                     <option value="Cinematic">Cinematic (Balanced)</option>
-                                    <option value="Horror">Horror (Tense/Handheld)</option>
-                                    <option value="Street Style">Street Style (Raw/Candid)</option>
-                                    <option value="Interview">Interview (Static/Formal)</option>
+                                    <option value="Horror">Horror (Atmospheric)</option>
+                                    <option value="Street Style">Street Style (Raw)</option>
                                     <option value="Action">Action (Kinetic)</option>
-                                    <option value="Cyberpunk">Cyberpunk (Neon/Moody)</option>
-                                    <option value="SciFi">Sci-Fi (Clinical/Clean)</option>
+                                    <option value="Cyberpunk">Cyberpunk (Neon)</option>
+                                    <option value="SciFi">Sci-Fi (Clinical)</option>
                                     <option value="Fantasy">Fantasy (Ethereal)</option>
+                                    <option value="Noir">Film Noir (B&W)</option>
+                                    <option value="Western">Western (Gritty)</option>
+                                    <option value="Documentary">Documentary (Real)</option>
                                 </select>
                             </section>
                             <section>
-                                <label>SCENE TEMPLATE (Trope)</label>
+                                <label>SCENE TROPE</label>
                                 <select id="sceneTrope">
-                                    <option value="None">None (Manual Control)</option>
+                                    <option value="None">None (Manual)</option>
                                     <option value="Romantic Dialogue">Romantic Dialogue</option>
                                     <option value="Found Footage">POV Found Footage</option>
                                     <option value="Slasher Chase">Slasher Chase</option>
@@ -44,101 +45,77 @@
                                     <option value="Superhero Landing">Superhero Landing</option>
                                     <option value="High Noon Duel">High Noon Duel</option>
                                     <option value="Nature Doc">Nature Doc</option>
-                                    <option value="Vintage Memory">Vintage 8mm Memory</option>
+                                    <option value="Vintage Memory">Vintage 8mm</option>
                                     <option value="CCTV Security">CCTV Security Cam</option>
+                                    <option value="Dream Sequence">Dream Sequence</option>
                                 </select>
                             </section>
                         </div>
-                        <section style="margin-top:15px">
-                            <label>CAMERA MOTION OVERRIDE</label>
-                            <select id="cameraMovement">
-                                <option value="Genre Default">Cinematic (Genre-Based)</option>
-                                <option value="Handheld">Handheld (Organic)</option>
-                                <option value="Static">Static (Locked)</option>
-                                <option value="Dolly In">Slow Dolly In</option>
-                                <option value="Orbital">Orbital Pan</option>
-                            </select>
-                        </section>
                     </div>
 
                     <div class="card">
-                        <h3>Sequence Parameters</h3>
+                        <h3>Music & Score Engine</h3>
                         <div class="grid">
                             <section>
-                                <label>DURATION: <span id="durVal">10</span>s</label>
-                                <input type="range" id="sequenceDuration" min="3" max="15" value="10">
-                            </section>
-                            <section>
-                                <label>TOTAL CUTS: <span id="cutVal">4</span></label>
-                                <input type="range" id="cutCount" min="1" max="25" value="4">
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>AI Engine Tuning</h3>
-                        <div class="grid">
-                            <section>
-                                <label>GENRE INFLUENCE: <span id="infVal">5</span></label>
-                                <input type="range" id="genreInfluence" min="1" max="10" value="5">
-                            </section>
-                            <section>
-                                <label>MOTION INTENSITY: <span id="motionVal">5</span></label>
-                                <input type="range" id="motionSlider" min="1" max="10" value="5">
-                            </section>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h3>Audio & Dialogue</h3>
-                        <div class="grid-single">
-                            <section>
-                                <label>SOUNDTRACK / AUDIO DESIGN</label>
-                                <select id="audioStyle">
-                                    <option value="Ambient Foley Only">Ambient Foley Only (Realistic)</option>
-                                    <option value="Cinematic Orchestral Score">Cinematic Orchestral Score</option>
-                                    <option value="Industrial Tense Drones">Industrial Tense Drones</option>
-                                    <option value="Lo-Fi Analog Synth">Lo-Fi Analog Synth</option>
-                                    <option value="Silence (Muted)">Silence (Muted)</option>
+                                <label>SCORE STYLE</label>
+                                <select id="musicStyle">
+                                    <option value="Foley & Ambient Only">Foley/Ambient Only</option>
+                                    <option value="Cinematic Orchestral">Orchestral (Strings/Brass)</option>
+                                    <option value="Analog Synth">Analog Synth (Retro)</option>
+                                    <option value="Industrial Percussive">Industrial (Heavy)</option>
+                                    <option value="Dark Drone Ambient">Dark Ambient (Drone)</option>
+                                    <option value="Acoustic Folk">Acoustic Folk (Soft)</option>
+                                    <option value="Cybercore Glitch">Cybercore (Fast)</option>
+                                    <option value="Epic Trailer Hybrid">Epic Hybrid</option>
+                                    <option value="Jazz Noir">Jazz Noir</option>
                                 </select>
                             </section>
                             <section>
-                                <label>DIALOGUE / AUDIO CUES (One per line)</label>
-                                <textarea id="dialogueInput" placeholder='Character: "Line"'></textarea>
+                                <label>EMOTIONAL MOOD</label>
+                                <select id="musicMood">
+                                    <option value="Tense">Tense / Suspenseful</option>
+                                    <option value="Melancholic">Melancholic / Sad</option>
+                                    <option value="Heroic">Heroic / Grand</option>
+                                    <option value="Ominous">Ominous / Dark</option>
+                                    <option value="Aggressive">Aggressive / Intense</option>
+                                    <option value="Whimsical">Whimsical / Magic</option>
+                                </select>
                             </section>
                         </div>
                     </div>
 
-                    <div class="card primary-card">
-                        <h3>Production Focus</h3>
-                        <section>
-                            <label>SUBJECT / ACTION ANCHOR</label>
-                            <textarea id="subjectInput" placeholder="Describe the character or object from your reference image and its primary action..."></textarea>
-                        </section>
+                    <div class="card">
+                        <h3>Sequence Tuning</h3>
+                        <div class="grid">
+                            <section><label>DURATION: <span id="durVal">10</span>s</label><input type="range" id="sequenceDuration" min="3" max="15" value="10"></section>
+                            <section><label>CUTS: <span id="cutVal">4</span></label><input type="range" id="cutCount" min="1" max="25" value="4"></section>
+                            <section><label>GENRE INFLUENCE: <span id="infVal">5</span></label><input type="range" id="genreInfluence" min="1" max="10" value="5"></section>
+                            <section><label>MOTION INTENSITY: <span id="motionVal">5</span></label><input type="range" id="motionSlider" min="1" max="10" value="5"></section>
+                        </div>
                     </div>
 
-                    <div class="action-buttons">
-                        <button id="generateBtn" class="btn-primary">GENERATE MASTER DIRECTIVE</button>
-                        <button id="copyBtn" class="btn-secondary">COPY TO CLIPBOARD</button>
+                    <div class="card">
+                        <h3>Dialogue / Vocal Script</h3>
+                        <div id="dialogueContainer"></div>
+                        <button id="addLineBtn" class="btn-small">+ ADD DIALOGUE LINE</button>
                     </div>
+
+                    <div class="card">
+                        <h3>Subject Anchor</h3>
+                        <textarea id="subjectInput" placeholder="Detailed subject/character description from your image..."></textarea>
+                    </div>
+
+                    <button id="generateBtn" class="btn-main">GENERATE ULTIMATE DIRECTIVE</button>
                 </div>
 
-                <div class="output-panel">
+                <div class="right-panel">
                     <div class="card output-card">
-                        <h3>Final Directive Output</h3>
-                        <textarea id="outputPrompt" readonly placeholder="Generator output will appear here..."></textarea>
-                    </div>
-                    <div class="card negative-card">
-                        <h3>Global Negative Prompt</h3>
-                        <textarea id="negativePrompt" readonly>blurry, low quality, distorted, watermark, text, flickering artifacts, morphing, extra limbs, low resolution, shaky camera (unless specified), dull colors, unstable geometry.</textarea>
+                        <textarea id="outputPrompt" readonly></textarea>
+                        <button id="copyBtn" class="btn-copy">COPY TO CLIPBOARD</button>
                     </div>
                 </div>
             </main>
-
-            <footer>
-                <p>&copy; 2026 PRO AI VIDEO DIRECTOR | Optimized for Seedance & Kling Image-to-Video Workflows</p>
-            </footer>
         </div>
     </div>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a0a85cfb6c75bdf9',t:'MTc4MTI2MjE0NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>
